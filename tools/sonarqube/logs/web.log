@@ -1,0 +1,264 @@
+2022.03.31 19:18:28 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2022.03.31 19:18:28 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2022.03.31 19:18:29 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2022.03.31 19:18:29 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 9.3.0.51899 / 1a276267d04cd4df862d57201082413946b6b3fa
+2022.03.31 19:18:29 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.03.31 19:18:29 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/ella/code/SoftwareEngineering/sonarqube/data
+2022.03.31 19:18:29 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.03.31 19:18:29 WARN  web[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/ella/code/SoftwareEngineering/sonarqube
+2022.03.31 19:18:30 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin C# Code Quality and Security / 8.34.0.42011 / 7e01861b987ff6ebaef0ce378b5d90a3c8012f96
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Configuration detection fot Code Quality and Security / 1.2.0.267 / 4f37ba9ffb37a96d5883e52ad392ed32c5c6eaab
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Flex Code Quality and Security / 2.7.0.2865 / 9e61d9774455b25eefd0b71bf8903cb030641864
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Go Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin HTML Code Quality and Security / 3.6.0.3106 / 963bdc9f051f5dcb698b418790364231aeea04f2
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin IaC Code Quality and Security / 1.5.0.1600 / 49f85d3bb8f38ae65ec0edf4fc109761e68fb488
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JaCoCo / 1.1.1.1157 / 83478572b9f23efac29de15e30c7758bbb0c0e47
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Java Code Quality and Security / 7.7.0.28547 / be7b25484ea63cc345b695fc5b1d40ccacc3e0b6
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JavaScript/TypeScript Code Quality and Security / 8.8.0.17228 / a3815936a51aa720d54bf0e04a9e351c3c0ad642
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Kotlin Code Quality and Security / 2.9.0.1147 / 6ce439214a685d4aabde6461fd609a9a9c1df1c6
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin PHP Code Quality and Security / 3.22.1.8626 / 68787fc2bf0b446b0fa5e3c1943ee14fd91ee79d
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Python Code Quality and Security / 3.9.0.9230 / 8241f6a6f0bdd5175741f8b4e302fc6942f2f248
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Ruby Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Scala Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Text file Code Quality and Security / 1.0.0.120 / b7539037caf5df01cc49bb7820a0c23f35196f0e
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin VB.NET Code Quality and Security / 8.34.0.42011 / 7e01861b987ff6ebaef0ce378b5d90a3c8012f96
+2022.03.31 19:18:30 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin XML Code Quality and Security / 2.5.0.3376 / 3b089c16cf0736c56f4fdb2fc88ddad59e7ca45d
+2022.03.31 19:18:31 WARN  web[][o.s.a.s.w.WebService$Action] Description is not set on action api/monitoring/metrics
+2022.03.31 19:18:31 WARN  web[][o.s.a.s.w.WebService$Action] Since is not set on action api/monitoring/metrics
+2022.03.31 19:18:31 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/monitoring/metrics
+2022.03.31 19:18:31 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/system/liveness
+2022.03.31 19:18:31 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@300c7233 [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+2022.03.31 19:18:31 INFO  web[][o.s.s.p.DetectPluginChange] Detect plugin changes
+2022.03.31 19:18:31 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2022.03.31 19:18:31 INFO  web[][o.s.s.p.DetectPluginChange] No plugin change detected
+2022.03.31 19:18:31 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2022.03.31 19:18:32 INFO  web[][o.s.s.s.LogServerId] Server ID: BF41A1F2-AX_bZJng7sn5Lr3wHi58
+2022.03.31 19:18:32 WARN  web[][o.s.s.a.LogOAuthWarning] For security reasons, OAuth authentication should use HTTPS. You should set the property 'Administration > Configuration > Server base URL' to a HTTPS URL.
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/plugins/download
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/system/liveness
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_bitbucketserver_projects
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketcloud_repos
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/check_pat
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_azure_projects
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketserver_repos
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_azure_repos
+2022.03.31 19:18:32 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/project_dump/status
+2022.03.31 19:18:32 INFO  web[][o.s.s.t.TelemetryDaemon] Sharing of SonarQube statistics is enabled.
+2022.03.31 19:18:32 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2022.03.31 19:18:32 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired session tokens has removed 0 elements
+2022.03.31 19:18:32 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired SAML message ids has removed 0 elements
+2022.03.31 19:18:32 INFO  web[][o.s.s.s.GeneratePluginIndex] Generate scanner plugin index
+2022.03.31 19:18:32 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2022.03.31 19:18:32 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2022.03.31 19:18:32 INFO  web[][o.s.s.s.RegisterPlugins] Register plugins
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.SonarLintConnectionFilter@4ebfff3b [pattern=UrlPattern{inclusions=[/api/*], exclusions=[]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@4e16d008 [pattern=UrlPattern{inclusions=[/api/issues/delete_comment.*, ...], exclusions=[/api/authentication/login.*, ...]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceReroutingFilter@7482523f [pattern=UrlPattern{inclusions=[/api/components/bulk_update_key, ...], exclusions=[]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.plugins.PluginsRiskConsentFilter@534ec25f [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.DefaultAdminCredentialsVerifierFilter@68e98de2 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@1795ef20 [pattern=UrlPattern{inclusions=[/sessions/init/*], exclusions=[]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@d1393d1 [pattern=UrlPattern{inclusions=[/oauth2/callback/*], exclusions=[]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ResetPasswordFilter@75149d41 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@6c60d7fc [pattern=UrlPattern{inclusions=[/api/authentication/login], exclusions=[]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@1b7f7e43 [pattern=UrlPattern{inclusions=[/api/authentication/logout], exclusions=[]}]
+2022.03.31 19:18:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@26528650 [pattern=UrlPattern{inclusions=[/api/authentication/validate], exclusions=[]}]
+2022.03.31 19:18:33 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is not started as there are no projects in this situation.
+2022.03.31 19:18:33 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2022.03.31 19:18:33 INFO  web[][o.s.s.p.Platform] WebServer is operational
+2022.03.31 19:30:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:30:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:31:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:31:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:31:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:31:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:31:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:31:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:32:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:32:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:32:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:32:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:32:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:32:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:33:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:33:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:33:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:33:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:33:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:33:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:34:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:34:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:34:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:34:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:34:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:34:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:35:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:35:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:35:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:35:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:35:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:35:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:36:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:36:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:36:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:36:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:36:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:36:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:37:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:37:14 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:37:24 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:37:34 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:37:44 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:37:54 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:38:04 ERROR web[][o.s.s.m.ElasticSearchMetricTask] Failed to query ES status, no nodes stats returned by elasticsearch API
+2022.03.31 19:38:14 INFO  web[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.03.31 19:38:14 INFO  web[][o.s.s.n.NotificationDaemon] Notification service stopped
+2022.03.31 19:38:14 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2022.03.31 19:38:14 INFO  web[][o.s.s.app.WebServer] WebServer stopped
+2022.03.31 19:41:15 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2022.03.31 19:41:15 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2022.03.31 19:41:15 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2022.03.31 19:41:16 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 9.3.0.51899 / 1a276267d04cd4df862d57201082413946b6b3fa
+2022.03.31 19:41:16 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.03.31 19:41:16 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/ella/code/SoftwareEngineering/tools/sonarqube/data
+2022.03.31 19:41:16 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.03.31 19:41:16 WARN  web[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.03.31 19:41:16 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/ella/code/SoftwareEngineering/tools/sonarqube
+2022.03.31 19:41:16 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin C# Code Quality and Security / 8.34.0.42011 / 7e01861b987ff6ebaef0ce378b5d90a3c8012f96
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Configuration detection fot Code Quality and Security / 1.2.0.267 / 4f37ba9ffb37a96d5883e52ad392ed32c5c6eaab
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Flex Code Quality and Security / 2.7.0.2865 / 9e61d9774455b25eefd0b71bf8903cb030641864
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Go Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin HTML Code Quality and Security / 3.6.0.3106 / 963bdc9f051f5dcb698b418790364231aeea04f2
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin IaC Code Quality and Security / 1.5.0.1600 / 49f85d3bb8f38ae65ec0edf4fc109761e68fb488
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JaCoCo / 1.1.1.1157 / 83478572b9f23efac29de15e30c7758bbb0c0e47
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Java Code Quality and Security / 7.7.0.28547 / be7b25484ea63cc345b695fc5b1d40ccacc3e0b6
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JavaScript/TypeScript Code Quality and Security / 8.8.0.17228 / a3815936a51aa720d54bf0e04a9e351c3c0ad642
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Kotlin Code Quality and Security / 2.9.0.1147 / 6ce439214a685d4aabde6461fd609a9a9c1df1c6
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin PHP Code Quality and Security / 3.22.1.8626 / 68787fc2bf0b446b0fa5e3c1943ee14fd91ee79d
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Python Code Quality and Security / 3.9.0.9230 / 8241f6a6f0bdd5175741f8b4e302fc6942f2f248
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Ruby Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Scala Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Text file Code Quality and Security / 1.0.0.120 / b7539037caf5df01cc49bb7820a0c23f35196f0e
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin VB.NET Code Quality and Security / 8.34.0.42011 / 7e01861b987ff6ebaef0ce378b5d90a3c8012f96
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin XML Code Quality and Security / 2.5.0.3376 / 3b089c16cf0736c56f4fdb2fc88ddad59e7ca45d
+2022.03.31 19:41:17 WARN  web[][o.s.a.s.w.WebService$Action] Description is not set on action api/monitoring/metrics
+2022.03.31 19:41:17 WARN  web[][o.s.a.s.w.WebService$Action] Since is not set on action api/monitoring/metrics
+2022.03.31 19:41:17 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/monitoring/metrics
+2022.03.31 19:41:17 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/system/liveness
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@8763a8 [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.DetectPluginChange] Detect plugin changes
+2022.03.31 19:41:17 INFO  web[][o.s.s.p.DetectPluginChange] No plugin change detected
+2022.03.31 19:41:17 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2022.03.31 19:41:18 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2022.03.31 19:41:19 INFO  web[][o.s.s.s.LogServerId] Server ID: BF41A1F2-AX_bZJng7sn5Lr3wHi58
+2022.03.31 19:41:19 WARN  web[][o.s.s.a.LogOAuthWarning] For security reasons, OAuth authentication should use HTTPS. You should set the property 'Administration > Configuration > Server base URL' to a HTTPS URL.
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/plugins/download
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/system/liveness
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_bitbucketserver_projects
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketcloud_repos
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/check_pat
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_azure_projects
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketserver_repos
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_azure_repos
+2022.03.31 19:41:19 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/project_dump/status
+2022.03.31 19:41:19 INFO  web[][o.s.s.t.TelemetryDaemon] Sharing of SonarQube statistics is enabled.
+2022.03.31 19:41:19 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2022.03.31 19:41:19 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired session tokens has removed 0 elements
+2022.03.31 19:41:19 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired SAML message ids has removed 0 elements
+2022.03.31 19:41:19 INFO  web[][o.s.s.s.GeneratePluginIndex] Generate scanner plugin index
+2022.03.31 19:41:19 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2022.03.31 19:41:19 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2022.03.31 19:41:19 INFO  web[][o.s.s.s.RegisterPlugins] Register plugins
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.SonarLintConnectionFilter@4e482769 [pattern=UrlPattern{inclusions=[/api/*], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@6ebd3adb [pattern=UrlPattern{inclusions=[/api/issues/delete_comment.*, ...], exclusions=[/api/authentication/login.*, ...]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceReroutingFilter@37f678d9 [pattern=UrlPattern{inclusions=[/api/components/bulk_update_key, ...], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.plugins.PluginsRiskConsentFilter@1eec1e74 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.DefaultAdminCredentialsVerifierFilter@2863a846 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@2cc9f9e3 [pattern=UrlPattern{inclusions=[/sessions/init/*], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@69f3f59d [pattern=UrlPattern{inclusions=[/oauth2/callback/*], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ResetPasswordFilter@9ed9e76 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@6166584c [pattern=UrlPattern{inclusions=[/api/authentication/login], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@744c9788 [pattern=UrlPattern{inclusions=[/api/authentication/logout], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@57b1965b [pattern=UrlPattern{inclusions=[/api/authentication/validate], exclusions=[]}]
+2022.03.31 19:41:19 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is not started as there are no projects in this situation.
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2022.03.31 19:41:19 INFO  web[][o.s.s.p.Platform] WebServer is operational
+2022.03.31 19:51:00 INFO  web[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.03.31 19:51:00 INFO  web[][o.s.s.n.NotificationDaemon] Notification service stopped
+2022.03.31 19:51:00 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2022.03.31 19:51:00 INFO  web[][o.s.s.app.WebServer] WebServer stopped
+2022.03.31 19:52:21 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2022.03.31 19:52:21 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2022.03.31 19:52:22 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2022.03.31 19:52:22 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 9.3.0.51899 / 1a276267d04cd4df862d57201082413946b6b3fa
+2022.03.31 19:52:22 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.03.31 19:52:22 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/ella/code/SoftwareEngineering/tools/sonarqube/data
+2022.03.31 19:52:22 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.03.31 19:52:22 WARN  web[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/ella/code/SoftwareEngineering/tools/sonarqube
+2022.03.31 19:52:23 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin C# Code Quality and Security / 8.34.0.42011 / 7e01861b987ff6ebaef0ce378b5d90a3c8012f96
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Configuration detection fot Code Quality and Security / 1.2.0.267 / 4f37ba9ffb37a96d5883e52ad392ed32c5c6eaab
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Flex Code Quality and Security / 2.7.0.2865 / 9e61d9774455b25eefd0b71bf8903cb030641864
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Go Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin HTML Code Quality and Security / 3.6.0.3106 / 963bdc9f051f5dcb698b418790364231aeea04f2
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin IaC Code Quality and Security / 1.5.0.1600 / 49f85d3bb8f38ae65ec0edf4fc109761e68fb488
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JaCoCo / 1.1.1.1157 / 83478572b9f23efac29de15e30c7758bbb0c0e47
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Java Code Quality and Security / 7.7.0.28547 / be7b25484ea63cc345b695fc5b1d40ccacc3e0b6
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JavaScript/TypeScript Code Quality and Security / 8.8.0.17228 / a3815936a51aa720d54bf0e04a9e351c3c0ad642
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Kotlin Code Quality and Security / 2.9.0.1147 / 6ce439214a685d4aabde6461fd609a9a9c1df1c6
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin PHP Code Quality and Security / 3.22.1.8626 / 68787fc2bf0b446b0fa5e3c1943ee14fd91ee79d
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Python Code Quality and Security / 3.9.0.9230 / 8241f6a6f0bdd5175741f8b4e302fc6942f2f248
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Ruby Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Scala Code Quality and Security / 1.9.0.3429 / faf3c08c0ebf3a877186442cd4a0ddd50de079a8
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Text file Code Quality and Security / 1.0.0.120 / b7539037caf5df01cc49bb7820a0c23f35196f0e
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin VB.NET Code Quality and Security / 8.34.0.42011 / 7e01861b987ff6ebaef0ce378b5d90a3c8012f96
+2022.03.31 19:52:23 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin XML Code Quality and Security / 2.5.0.3376 / 3b089c16cf0736c56f4fdb2fc88ddad59e7ca45d
+2022.03.31 19:52:24 WARN  web[][o.s.a.s.w.WebService$Action] Description is not set on action api/monitoring/metrics
+2022.03.31 19:52:24 WARN  web[][o.s.a.s.w.WebService$Action] Since is not set on action api/monitoring/metrics
+2022.03.31 19:52:24 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/monitoring/metrics
+2022.03.31 19:52:24 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/system/liveness
+2022.03.31 19:52:24 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@42a83d30 [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+2022.03.31 19:52:24 INFO  web[][o.s.s.p.DetectPluginChange] Detect plugin changes
+2022.03.31 19:52:24 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2022.03.31 19:52:24 INFO  web[][o.s.s.p.DetectPluginChange] No plugin change detected
+2022.03.31 19:52:24 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2022.03.31 19:52:25 INFO  web[][o.s.s.s.LogServerId] Server ID: BF41A1F2-AX_bZJng7sn5Lr3wHi58
+2022.03.31 19:52:25 WARN  web[][o.s.s.a.LogOAuthWarning] For security reasons, OAuth authentication should use HTTPS. You should set the property 'Administration > Configuration > Server base URL' to a HTTPS URL.
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/plugins/download
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/system/liveness
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_bitbucketserver_projects
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketcloud_repos
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/check_pat
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_azure_projects
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketserver_repos
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_azure_repos
+2022.03.31 19:52:25 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/project_dump/status
+2022.03.31 19:52:25 INFO  web[][o.s.s.t.TelemetryDaemon] Sharing of SonarQube statistics is enabled.
+2022.03.31 19:52:25 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2022.03.31 19:52:25 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired session tokens has removed 0 elements
+2022.03.31 19:52:25 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired SAML message ids has removed 0 elements
+2022.03.31 19:52:25 INFO  web[][o.s.s.s.GeneratePluginIndex] Generate scanner plugin index
+2022.03.31 19:52:25 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2022.03.31 19:52:25 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2022.03.31 19:52:25 INFO  web[][o.s.s.s.RegisterPlugins] Register plugins
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.SonarLintConnectionFilter@5320cf9c [pattern=UrlPattern{inclusions=[/api/*], exclusions=[]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@4409bb0b [pattern=UrlPattern{inclusions=[/api/issues/delete_comment.*, ...], exclusions=[/api/authentication/login.*, ...]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceReroutingFilter@5c5205e8 [pattern=UrlPattern{inclusions=[/api/components/bulk_update_key, ...], exclusions=[]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.plugins.PluginsRiskConsentFilter@2ed2e1a0 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.DefaultAdminCredentialsVerifierFilter@23c13b63 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@43b45255 [pattern=UrlPattern{inclusions=[/sessions/init/*], exclusions=[]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@24d7243d [pattern=UrlPattern{inclusions=[/oauth2/callback/*], exclusions=[]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ResetPasswordFilter@7e791d7d [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@fc0cd72 [pattern=UrlPattern{inclusions=[/api/authentication/login], exclusions=[]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@3d1b6522 [pattern=UrlPattern{inclusions=[/api/authentication/logout], exclusions=[]}]
+2022.03.31 19:52:25 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@44856a36 [pattern=UrlPattern{inclusions=[/api/authentication/validate], exclusions=[]}]
+2022.03.31 19:52:26 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is not started as there are no projects in this situation.
+2022.03.31 19:52:26 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2022.03.31 19:52:26 INFO  web[][o.s.s.p.Platform] WebServer is operational
+2022.03.31 20:40:18 INFO  web[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.03.31 20:40:18 INFO  web[][o.s.s.n.NotificationDaemon] Notification service stopped
+2022.03.31 20:40:18 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2022.03.31 20:40:18 INFO  web[][o.s.s.app.WebServer] WebServer stopped
