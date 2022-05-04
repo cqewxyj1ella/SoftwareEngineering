@@ -1,0 +1,99 @@
+@startuml
+title Q1-GES-Class Diagram
+@enduml
+
+
+@startuml
+abstract class Observer {
+update() : Boolean
+}
+note right of Observer : This is an abstract\n class of Observer
+class ConcreteObserver {
+observerState
+update() : Boolean
+}
+note right of ConcreteObserver : This class is derived\n from Observer
+abstract class Subject {
+attach(obs : Observer) : Boolean
+detach(obs : Observer) : Boolean
+notify() : Boolean
+}
+note left of Subject : This is an abstract\n class of Subject
+class BarnManager {
+obsvrList : List<ConcreteObserver>
+grainList : List<Grain>
+--
+getState(gr : Grain) : grainState
+setState(gr : Grain, st : grainState) : Boolean
+putIn(gr : Grain) : Boolean
+takeOut(gr : Grain) : Boolean
+.. derived ..
+attach(obs : Observer) : Boolean
+detach(obs : Observer) : Boolean
+notify() : Boolean
+}
+note left of BarnManager : This class is responsible for\n grains' put in and take out\n and updates grains' status.\n When a grain is sprout or\n arrives at barn, notify the\n observer.
+Subject <|-- BarnManager
+Observer <|-- ConcreteObserver
+Subject - Observer
+BarnManager - ConcreteObserver
+BarnManager ..> Grain
+ConcreteObserver ..> User
+@enduml
+
+
+@startuml
+class Factory {
+interestedGrain : grainType
+contactMethod : List<Method>
+}
+note left of Factory : This class contains a specific factory's\n interested grain and its contact method
+abstract class Method {
+contactInfo : string
+send(content : string) : Boolean
+receive() : string
+}
+note left of Method : This is an abstract class of factory's\n contact method, so that a new method\n can be easily described by deriving\n from it.
+class Email {
+contactInfo : string
+send(content : string) : Boolean
+receive() : string
+}
+class SMS {
+contactInfo : string
+send(content : string) : Boolean
+receive() : string
+}
+class Phone {
+contactInfo : string
+send(content : string) : Boolean
+receive() : string
+}
+Factory o-- Method
+Method <|-- Email
+Method <|-- SMS
+Method <|-- Phone
+@enduml
+
+
+@startuml
+class User {
+accountList : List<Factory>
+register(fac : Factory) : Boolean
+closeAccount(fac : Factory) : Boolean
+getFactories(gr : Grain) : List<Factory>
+}
+note right of User : This class is responsible for\n handling registrition and close\n of an account of factory.\n And returns a list of factories\n according to grain.
+note "Traverse accountList and\n returns all the factories\n that are interested in\n type of gr" as N_getFac
+User -- N_getFac
+User ..> Factory
+@enduml
+
+
+@startuml
+class Grain {
+type : grainType
+state : grainState
+}
+note left of Grain : This is a class to describe grain.\n grainType corresponds to factory's\n interested type of grain.\n grainState denotes grain's status,\n like sprout or not.
+@enduml

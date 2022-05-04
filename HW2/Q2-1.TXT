@@ -1,0 +1,157 @@
+@startuml
+title Q2.1-Login System-Class Diagram
+@enduml
+
+
+@startuml
+interface Observer {
+update() : Boolean
+}
+
+class LoginController {
+loginAction() : Boolean
+verify(ID : string, passwd : string) : Enum
+enterPage(userType : Enum, action : Enum) : Boolean
+update() : Boolean
+}
+
+Observer <|.. LoginController
+@enduml
+
+
+@startuml
+class TeacherView {
+showCourseList(courseList : List<Course>) : Boolean
+enterCourse(cou : Course) : Boolean
+downloadHW(stu : Student) : PDF
+assignHW(hw : string) : Boolean
+giveScore(hw : Homework, score : Float) : Boolean
+leaveComment(hw : Homework, comment : string) : Boolean
+update() : Boolean
+}
+
+class StudentView {
+showCourseList(courseList : List<Course>) : Boolean
+enterCourse(cou : Course) : Boolean
+showHWAssignment(cou : Course) : string
+submitHW(cou : Course, hw : PDF) : Boolean
+showHWScore(cou : Course, stu : Student) : Float
+showComment(cou : Course, stu : Student) : string
+update() : Boolean
+}
+
+Observer <|.. TeacherView
+Observer <|.. StudentView
+LoginController ..> TeacherView
+LoginController ..> StudentView
+@enduml
+
+
+@startuml
+abstract class Item {
+name : string
+ID : string
+getName() : string
+getID() : string
+}
+
+abstract class User {
+name : string
+ID : string
+passwd : string
+usertype : Enum
+getPasswd() : string
+getName() : string
+getID() : string
+getUserType() : Enum
+login(enter_ID : string, enter_passwd : string) : Boolean
+notify() : Boolean
+}
+User --|> Item
+
+class Teacher {
+name : string
+ID : string
+passwd : string
+usertype : Enum
+teachCourseList : List<Course>
+getPasswd() : string
+getName() : string
+getID() : string
+getUserType() : Enum
+getTeachingCourse() : List<Course>
+login(enter_ID : string, enter_passwd : string) : Boolean
+notify() : Boolean
+}
+Teacher --|> User
+
+class Student {
+name : string
+ID : string
+passwd : string
+usertype : Enum
+haveCourseList : List<Course>
+getPasswd() : string
+getName() : string
+getID() : string
+getUserType() : Enum
+getHavingCourse() : List<Course>
+login(enter_ID : string, enter_passwd : string) : Boolean
+notify() : Boolean
+}
+Student --|> User
+
+class Course {
+name : string
+ID : string
+teacher : Teacher
+hwAssign : string
+hwSubmit : List<Homework>
+getName() : string
+getID() : string
+getHWAssignment() : string
+getHWSubmit() : Homework
+insertAssignment(assign : string) : Boolean
+insertHWSubmit(hw : Homework) : Boolean
+scoreSubmittedHW(hw : Homework, score : Float) : Boolean
+}
+Course --|> Item
+
+class Homework {
+submitStudent : Student
+content : PDF
+version : Integer
+score : Float
+comment : string
+getContent() : PDF
+getScore() : Float
+getComment() : string
+modifyScore(score : Float) : Boolean
+modifyComment(comment : string) : Boolean
+}
+Course o-- Homework
+@enduml
+
+
+@startuml
+class OnlineSystem {
+stuList : List<Student>
+teaList : List<Teacher>
+couList : List<Course>
+getStu(ID : string) : Student
+getTea(ID : string) : Teacher
+getCou(ID : string) : Course
+InsertStu(stu : Student) : Boolean
+InsertTea(tea : Teacher)
+InsertCou(cou : Course)
+ModifyStu(ID : string, stu : Student)
+ModifyTea(ID : string, tea : Teacher)
+ModifyCou(ID : string, cou : Course)
+}
+OnlineSystem *-- Student
+OnlineSystem *-- Teacher
+OnlineSystem *-- Course
+LoginController ..> OnlineSystem
+TeacherView ..> OnlineSystem
+StudentView ..> OnlineSystem
+@enduml

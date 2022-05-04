@@ -1,0 +1,148 @@
+@startuml
+title Q2.2-Login System-Sequence Diagram-Student
+autonumber
+@enduml
+
+
+@startuml
+actor Student as astu
+control LoginController as c1
+entity StudentView as svi
+database OnlineSystem as sys
+entity Student as stu
+entity Course as cou
+entity Homework as hw
+
+== Login ==
+astu -> c1 : notify()
+activate astu
+activate c1
+
+c1 --> astu : loginAction()
+activate astu
+astu -> astu : login(ID, passwd)
+astu -> c1 : notify()
+deactivate astu
+
+activate c1
+c1 -> sys : getStu(ID)
+activate sys
+sys --> c1 : Student
+deactivate sys
+
+c1 -> stu : getID(),getPasswd()
+activate stu
+stu --> c1 : ID, passwd
+deactivate stu
+
+c1 -> c1 : verify(ID,passwd)
+c1 --> astu : update()
+deactivate c1
+deactivate astu
+
+c1 ->> svi : enterPage(userType, showCouseList)
+deactivate c1
+activate svi
+@enduml
+
+@startuml
+== Show Course List ==
+svi ->> sys : getStu(ID)
+activate svi
+activate sys
+sys --> svi : Student
+deactivate sys
+
+svi ->> stu : getHavingCourse()
+activate stu
+stu --> svi : List<Course>
+deactivate stu
+deactivate svi
+
+svi ->> svi : showCourseList(courseList)
+activate svi
+svi --> c1 : update()
+deactivate svi
+activate c1
+c1 --> astu : update()
+activate astu
+deactivate astu
+deactivate c1
+
+svi ->> svi : enterCourse(course)
+activate svi
+svi --> c1 : update()
+deactivate svi
+activate c1
+c1 --> astu : update()
+activate astu
+deactivate astu
+deactivate c1
+deactivate svi
+@enduml
+
+
+@startuml
+== Handle Homework ==
+astu ->> c1 : notify()
+activate astu
+deactivate astu
+activate c1
+c1 ->> svi : enterPage(userType, handleHW)
+deactivate c1
+
+activate svi
+svi ->> sys : getCou(ID)
+activate svi
+activate sys
+sys --> svi : Course
+deactivate sys
+
+svi ->> cou : getHWAssignment()
+activate cou
+cou --> svi : assignment : string
+deactivate cou
+
+svi ->> svi : showHWAssignment(course)
+svi --> c1 : update()
+deactivate svi
+activate c1
+c1 --> astu : update()
+activate astu
+deactivate astu
+deactivate c1
+
+svi ->> cou : submitHW(course, hw)
+activate svi
+activate cou
+cou -> cou : insertHWSubmit(hw)
+deactivate cou
+svi --> c1 : update()
+deactivate svi
+activate c1
+c1 --> astu : update()
+activate astu
+deactivate astu
+deactivate c1
+
+svi ->> cou : getHWSubmit()
+activate svi
+activate cou
+cou --> svi : Homework
+deactivate cou
+svi ->> hw : getScore()
+activate hw
+hw --> svi : score : Float
+svi ->> hw : getComment()
+hw --> svi : comment : string
+deactivate hw
+
+svi --> c1 : update()
+deactivate svi
+activate c1
+c1 --> astu : update()
+activate astu
+deactivate astu
+deactivate c1
+deactivate svi
+@enduml

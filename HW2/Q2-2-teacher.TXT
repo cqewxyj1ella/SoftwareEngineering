@@ -1,0 +1,149 @@
+@startuml
+title Q2.2-Login System-Sequence Diagram-Teacher
+autonumber
+@enduml
+
+
+@startuml
+actor Teacher as atea
+control LoginController as c2
+entity TeacherView as tvi
+database OnlineSystem as sys
+entity Teacher as tea
+entity Course as cou
+entity Homework as hw
+
+== Login ==
+atea -> c2 : notify()
+activate atea
+activate c2
+
+c2 --> atea : loginAction()
+activate atea
+atea -> atea : login(ID, passwd)
+atea -> c2 : notify()
+deactivate atea
+
+activate c2
+c2 -> sys : getTea(ID)
+activate sys
+sys --> c2 : Teacher
+deactivate sys
+
+c2 -> tea : getID(),getPasswd()
+activate tea
+tea --> c2 : ID, passwd
+deactivate tea
+
+c2 -> c2 : verify(ID,passwd)
+c2 --> atea : update()
+deactivate c2
+deactivate atea
+
+c2 ->> tvi : enterPage(userType, showCouseList)
+deactivate c2
+activate tvi
+@enduml
+
+@startuml
+== Show Course List ==
+tvi ->> sys : getTea(ID)
+activate tvi
+activate sys
+sys --> tvi : Teacher
+deactivate sys
+
+tvi ->> tea : getTeachingCourse()
+activate tea
+tea --> tvi : List<Course>
+deactivate tea
+deactivate tvi
+
+tvi ->> tvi : showCourseList(courseList)
+activate tvi
+tvi --> c2 : update()
+deactivate tvi
+activate c2
+c2 --> atea : update()
+activate atea
+deactivate atea
+deactivate c2
+
+tvi ->> tvi : enterCourse(course)
+activate tvi
+tvi --> c2 : update()
+deactivate tvi
+activate c2
+c2 --> atea : update()
+activate atea
+deactivate atea
+deactivate c2
+deactivate tvi
+@enduml
+
+
+@startuml
+== Handle Homework ==
+atea ->> c2 : notify()
+activate atea
+deactivate atea
+activate c2
+c2 ->> tvi : enterPage(userType, handleHW)
+deactivate c2
+
+activate tvi
+tvi ->> sys : getCou(ID)
+activate tvi
+activate sys
+sys --> tvi : Course
+deactivate sys
+
+tvi ->> tvi : assignHW(assign)
+tvi ->> cou : insertAssignment(assign)
+activate cou
+deactivate cou
+tvi --> c2 : update()
+deactivate tvi
+activate c2
+c2 --> atea : update()
+activate atea
+deactivate atea
+deactivate c2
+
+tvi ->> tvi : downloadHW(student)
+activate tvi
+tvi -> cou : getHWSubmit()
+activate cou
+cou --> tvi : hw : Homework
+deactivate cou
+tvi -> hw : getContent()
+activate hw
+hw --> tvi : PDF
+deactivate hw
+tvi --> tvi : PDF
+tvi --> c2 : update()
+deactivate tvi
+activate c2
+c2 --> atea : update()
+activate atea
+deactivate atea
+deactivate c2
+
+tvi ->> tvi : giveScore(hw,score)
+activate tvi
+tvi -> hw : modifyScore(score)
+activate hw
+deactivate hw
+deactivate tvi
+
+tvi ->> tvi : leaveComment(hw,comment)
+activate tvi
+tvi --> c2 : update()
+deactivate tvi
+activate c2
+c2 --> atea : update()
+activate atea
+deactivate atea
+deactivate c2
+deactivate tvi
+@enduml
